@@ -12,9 +12,31 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/admin', function () {
     return view('layouts.Admin');
 });
+
+
+
+//Admin route group
+
+ // Route::group(array('prefix' => 'admin'), function()
+ // {
+
+ //  Route::get('index', ['as' => 'index', 'uses' => 'AdminController@index']);
+   
+ // });
+
+
+ Route::group(['prefix'=>'admin'],function(){
+
+    
+    Route::get('index', function () {
+      return view('layouts.Admin');
+    });
+  
+});
+
+
+ 
+
+

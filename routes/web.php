@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.Admin');
+    return view('welcome');
 });
 
 
@@ -30,9 +30,20 @@ Route::get('/', function () {
  Route::group(['prefix'=>'admin'],function(){
 
     
+
     Route::get('index', function () {
       return view('layouts.Admin');
     });
+
+
+    //Employe catagory
+
+     Route::resource('EmployeCatagory','CatagoryController');
+
+    //  Route::get('catagory', function () {
+    //   return view('Admin.EmployeCatagory');
+    // });
+
   
 });
 

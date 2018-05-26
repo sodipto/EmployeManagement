@@ -100,4 +100,16 @@ class CatagoryController extends Controller
 
 
 
+     public function destroy($id){
+
+         $emp_catagory=EmployeCatagory::find($id);
+            
+         $emp_catagory->delete();
+
+         return redirect()->back()->with('message','Delete Employe Catagory Sucessfully');
+
+     }
+
+
+
 }

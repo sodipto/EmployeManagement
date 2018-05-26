@@ -114,7 +114,10 @@
                   </td>
 
                   <td>
-                  	<p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
+                      {!! Form::open(['action' => ['CatagoryController@destroy',$catagory->Emp_catagory_id],'method'=>'delete']) !!}
+                  	<p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs btndelete"><span class="glyphicon glyphicon-trash"></span></button>
+                    </p>
+                       {!! Form::close() !!}
                   </td>
                 </tr>
             @endforeach
@@ -206,6 +209,22 @@
     $('#editdesc').val(Description);
     $('#cid').val(id);
 
+  });
+
+
+
+  //Delete button click
+
+  
+  $('.btndelete').click(function(e) {
+
+      if(confirm("Are you sure delete!")){
+
+        return true;
+      }
+      
+   
+       e.preventDefault();
   });
 
 

@@ -29,20 +29,21 @@ Route::get('/', function () {
 
  Route::group(['prefix'=>'admin'],function(){
 
-    
-
-    Route::get('index', function () {
+ 	//This route check admin layout
+    Route::get('layout', function () {
       return view('layouts.Admin');
     });
 
 
-    //Employe catagory
+    //Employe catagory insert,update,delete
 
      Route::resource('EmployeCatagory','CatagoryController');
 
-    //  Route::get('catagory', function () {
-    //   return view('Admin.EmployeCatagory');
-    // });
+     //end 
+
+     Route::get('AddNewEmploye', function () {
+      return view('Admin.AddNewEmploye');
+    });
 
   
 });

@@ -271,6 +271,10 @@ desired effect
             <li><a href="/admin/AddNewEmploye"><i class="fa fa-link"></i> <span>Add New Employe</span></a></li>
             <li><a href="/admin/UpdateOfficialDetails"><i class="fa fa-link"></i>Update Employe Officials Details</a></li>
             <li><a href="/admin/UpdateEmployeSalary"><i class="fa fa-link"></i> <span>Update Salary</span></a></li>
+
+             <li><a href="/admin/EmployeeDetails"><i class="fa fa-link"></i> <span>Employe Details</span></a></li>
+
+            
           </ul>
         </li>
 

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.Admin'); //welcome
 });
 
 
@@ -40,10 +40,32 @@ Route::get('/', function () {
      Route::resource('EmployeCatagory','CatagoryController');
 
      //end 
+    
 
+    //Add New Employee
      Route::get('AddNewEmploye', function () {
       return view('Admin.AddNewEmploye');
     });
+
+     //Update Employee Officials Details optional parameter
+     Route::get('UpdateOfficialDetails/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.UpdateOfficialDetails',compact('id'));
+    });
+
+     //Update Employee salary Details with optional parameter
+     Route::get('UpdateEmployeSalary/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.UpdateEmployeSalary',compact('id'));
+    });
+
+
+     // Employee Details Details with optional parameter
+     Route::get('EmployeeDetails/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.EmployeeDetails',compact('id'));
+    });
+
 
   
 });

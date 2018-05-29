@@ -245,7 +245,7 @@ hr { background-color: red; height: 1px; border: 0; }
            
           <div class="form-group">
             <label for="">NID Card Number</label>
-            <input type="number" class="form-control" id="" placeholder="ex:19951212121">
+            <input type="number" class="form-control" id="" placeholder="ex: 19951212121">
          </div>
 
         

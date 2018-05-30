@@ -67,6 +67,21 @@ Route::get('/', function () {
     });
 
 
+     // Employee Add Salary with optional parameter
+     Route::get('AddSalary/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.AddSalary',compact('id'));
+    });
+
+
+      // Employee Add Salary with optional parameter
+     Route::get('ViewSalary/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.ViewSalary',compact('id'));
+    });
+
+
+
   
 });
 

@@ -278,7 +278,7 @@ hr { background-color: red; height: 1px; border: 0; }
 
 
 
-
+          {{-- Officials Details Tab --}}
           <div role="tabpanel" class="tab-pane" id="Official">
              <div class="col-md-12 ">
 
@@ -352,7 +352,122 @@ hr { background-color: red; height: 1px; border: 0; }
             </div>
 
           </div>
-           <div role="tabpanel" class="tab-pane" id="Salary">...</div>
+
+           {{-- Salary Tab --}}
+           <div role="tabpanel" class="tab-pane" id="Salary">
+             
+         <div class="col-md-12 ">
+
+            <table class="table">
+                    <tbody>
+
+                      <tr>
+                        <td style="text-align: left; width: 30%">Bank Name:</td>
+                        <td style="text-align: left; width: 70%">
+                          Dutch Bangla Bank
+                        </td>
+                      </tr>
+
+                       <tr>
+                        <td style="text-align: left">Bank Branch :</td>
+                        <td style="text-align: left">
+                            
+                         Banani
+                        </td>
+                    </tr>
+                   
+              
+                    <tr>
+                        <td style="text-align: left">Account Number :</td>
+                        <td style="text-align: left">
+                            
+                            121212121
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: left">Basic Salary :</td>
+                        <td style="text-align: left">
+                          25000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">Conveyance :</td>
+                        <td style="text-align: left">
+                            500
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: left">Medical Allowance :</td>
+                        <td style="text-align: left">
+                         1500
+                        </td>
+                    </tr>
+                    <tr>
+                       <td style="text-align: left">Special Allowance:</td>
+                        <td style="text-align: left">
+                           500
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: left">Provident Fund:</td>
+                        <td style="text-align: left">
+                            300
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td style="text-align: left">Bonus:</td>
+                        <td style="text-align: left">
+                            3000
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td style="text-align: left">Yearly Increment:</td>
+                        <td style="text-align: left">
+                            300
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td style="text-align: left">Salary Scale:</td>
+                        <td style="text-align: left">
+                          1
+                        </td>
+                    </tr>
+
+
+                     <tr>
+                        <td style="text-align: left">Extra Field:</td>
+                        <td style="text-align: left">
+                           If You needed
+                        </td>
+                    </tr>Salary Scale
+                   
+
+                   
+                    
+
+                </tbody>
+
+              </table>
+          
+           
+
+
+            </div>
+
+
+           </div>
+
+
+
+
+
+
         </div>
       </div>
     

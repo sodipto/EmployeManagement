@@ -84,13 +84,44 @@ Route::get('/', function () {
     });
 
 
-    // Employee Add Salary with optional parameter
+    // Employee Add Attendance with optional parameter
      Route::get('AddAttendance/{id?}', function ($id=0) {
        // return $id;
       return view('Admin.AddAttendance',compact('id'));
     });
 
-     Route::get('events', 'EventController@index')->name('events.index');
+
+
+      // Employee View  Attendance with optional parameter
+     Route::get('ViewAllAttendance/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.ViewAllAttendance',compact('id'));
+    });
+
+   
+
+   //Communicate With Employeee
+
+    // Employee View  Salary with optional parameter
+     Route::get('SendWorkTask/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.SendWorkTask',compact('id'));
+    });
+
+     // Employee View  Salary with optional parameter
+     Route::get('SendWorkTaskMultiple/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.SendWorkTaskMultiple',compact('id'));
+     });
+
+
+     
+
+
+
+
+    //Add event To The Calender
+    Route::get('events', 'EventController@index')->name('events.index');
     Route::post('events', 'EventController@addEvent')->name('events.add');
   
 });

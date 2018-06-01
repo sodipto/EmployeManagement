@@ -143,7 +143,7 @@ hr { background-color: red; height: 1px; border: 0; }
    	 	
           <div class="panel panel-primary">
 
-             <div class="panel-heading">Add Official Event To The Calender</div>
+             <div class="panel-heading">Add Attendance To The Calender</div>
 
               <div class="panel-body">    
 

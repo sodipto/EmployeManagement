@@ -17,6 +17,9 @@ Route::get('/', function () {
 
 
 
+
+
+
 //Admin route group
 
  // Route::group(array('prefix' => 'admin'), function()
@@ -81,7 +84,14 @@ Route::get('/', function () {
     });
 
 
+    // Employee Add Salary with optional parameter
+     Route::get('AddAttendance/{id?}', function ($id=0) {
+       // return $id;
+      return view('Admin.AddAttendance',compact('id'));
+    });
 
+     Route::get('events', 'EventController@index')->name('events.index');
+    Route::post('events', 'EventController@addEvent')->name('events.add');
   
 });
 

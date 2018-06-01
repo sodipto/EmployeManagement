@@ -161,6 +161,9 @@ return [
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+        //Full-calender 
+        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
+
     ],
 
     /*
@@ -211,6 +214,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        //use for full calender
+        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
 
     ],
 

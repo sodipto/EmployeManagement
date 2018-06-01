@@ -259,7 +259,7 @@ desired effect
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href=""><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li><a href="/admin/events"><i class="fa fa-link"></i> <span>Add Event</span></a></li>
          
          <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Employe Section</span>
@@ -303,6 +303,20 @@ desired effect
             <li><a href="/admin/ViewSalary">View All Salary</a></li>
           </ul>
         </li>
+
+
+         <li class="treeview">
+          <a href="#"><i class="fa fa-link"></i> <span>Attendence Section</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/admin/AddAttendance">Add Attendance(Daily)</a></li>
+            <li><a href="/admin/ViewSalary">View All Attendance</a></li>
+          </ul>
+        </li>
+
 
 
 
@@ -444,6 +458,8 @@ desired effect
 <script src="{{asset('Content/dist/js/adminlte.min.js')}}"></script>
 
 @yield('Scripts')
+
+
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
